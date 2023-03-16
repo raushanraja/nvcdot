@@ -1,8 +1,7 @@
-vim.api.nvim_set_keymap('', 'j', 'h', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('', ';', 'l', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('', 'k', 'k', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('', 'l', 'j', { noremap = true, silent = true })
+-- local autocmd = vim.api.nvim_create_autocmd
 
-
--- vim.api.nvim_set_keymap('v', '>', '>gv', { noremap = true, silent = true })
--- vim.api.nvim_set_keymap('v', '<', '<gv', { noremap = true, silent = true })
+-- Auto resize panes when resizing nvim window
+-- autocmd("VimResized", {
+--   pattern = "*",
+--   command = "tabdo wincmd =",
+-- })
