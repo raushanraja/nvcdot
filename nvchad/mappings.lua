@@ -23,7 +23,6 @@ M.general = {
     ["<C-l>"] = { "<C-w>j", "window down" },
     ["<C-k>"] = { "<C-w>k", "window up" },
 
-
     -- save
     ["<leader>w"] = { "<cmd> w <CR>", "save file" },
 
@@ -55,12 +54,33 @@ M.nvimtree = {
 -- add this table only when you want to disable default keys
 M.disabled = {
   n = {
-    ["<C-n>"] = "",
-    ["e"] = "",
+    ["<leader>a"] = {
+      function()
+        vim.lsp.buf.add_workspace_folder()
+      end,
+      "add workspace folder",
+    },
+    ["<leader>wa"] = "",
+    ["<leader>wr"] = "",
+    ["<leader>wl"] = ""
     --     ["<leader>h"] = "",
     --     ["<C-s>"] = ""
-  }
+  },
+  whichkey = {
+  plugin = true,
+
+  n = {
+    ["<leader>wa"] = "",
+    ["<leader>wr"] = "",
+    ["<leader>wl"] = ""
+  },
 }
+
+}
+
+
+
+
 
 -- M.abc = {
 
