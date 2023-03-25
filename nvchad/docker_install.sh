@@ -12,7 +12,7 @@ git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 
 
 # Copy the contents of this directory to custom directory
-mv nvcdot/nvchad ~/.config/nvim/lua/custom/
+mv /nvcdot/nvcdot/nvchad ~/.config/nvim/lua/custom/
 
 # Check if the copy was successful
 if [ $? -eq 0 ]; then
