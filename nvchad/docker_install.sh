@@ -2,10 +2,10 @@
 
 # Download and install Neovim
 wget https://github.com/neovim/neovim/releases/download/v0.8.0/nvim-linux64.deb
-dpkg -i nvim-linux64.deb
+sudo dpkg -i nvim-linux64.deb
 
 # Install required dependencies
-apt install -y npm nodejs python3-pip ripgrep git
+sudo apt install -y npm nodejs python3-pip ripgrep git
 
 # Clone the NvChad repository
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
