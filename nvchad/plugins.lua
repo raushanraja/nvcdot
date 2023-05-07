@@ -47,6 +47,11 @@ local plugins = {
     end,
   },
 
+  {
+    "NvChad/nvterm",
+    opts = overrides.nvterm
+  }
+
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",

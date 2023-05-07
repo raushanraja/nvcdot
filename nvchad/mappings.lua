@@ -63,6 +63,8 @@ M.disabled = {
     ["<leader>wa"] = "",
     ["<leader>wr"] = "",
     ["<leader>wl"] = "",
+    ["<leader>wk"] = "",
+    ["<leader>wK"] = "",
     ["j"] = { 'v:count || mode(1)[0:1] == "no" ? "j" : "gj"', opts = { expr = true } },
     ["k"] = { 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"', opts = { expr = true } },
     --     ["<leader>h"] = "",
@@ -80,7 +82,9 @@ M.disabled = {
   n = {
     ["<leader>wa"] = "",
     ["<leader>wr"] = "",
-    ["<leader>wl"] = ""
+    ["<leader>wl"] = "",
+    ["<leader>wk"] = "",
+    ["<leader>wK"] = "",
   },
 }
 
