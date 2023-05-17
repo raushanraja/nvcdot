@@ -46,12 +46,63 @@ local plugins = {
       require("better_escape").setup()
     end,
   },
+  
+  
+  {
+    "folke/which-key.nvim",
+    opts = overrides.whichkey,
+  },
 
   {
     "NvChad/nvterm",
     opts = overrides.nvterm
   }
 
+  {
+  "folke/trouble.nvim",
+  requires = "nvim-tree/nvim-web-devicons",
+  config = function()
+    require("trouble").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
+  end
+  },
+
+
+  {
+    "NvChad/nvterm",
+    opts = overrides.nvterm
+  },
+
+  {
+      "kylechui/nvim-surround",
+      version = "*", -- Use for stability; omit to use `main` branch for the latest features
+      event = "VeryLazy",
+      config = function()
+          require("nvim-surround").setup({
+              -- Configuration here, or leave empty to use defaults
+          })
+      end
+  },
+
+  {
+    "simrat39/symbols-outline.nvim",
+    event = "VeryLazy",
+    config = function()
+      require('symbols-outline').setup()
+    end
+  },
+
+
+  
+  
+  
+  
+  
+  
+  
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
