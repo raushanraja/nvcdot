@@ -51,6 +51,36 @@ M.nvimtree = {
   },
 }
 
+
+M.gitsigns = {
+  plugin = true,
+  n = {
+    ["<leader>hs"] = { "<cmd>lua require 'gitsigns'.stage_hunk()<cr>", "Stage Hunk" },
+
+  }
+}
+
+
+M.whichkey = {
+  plugin = true,
+
+  n = {
+  ["<leader>tt"] =  { "<cmd>TroubleToggle<cr>", "Toggle" },  
+  ["<leader>tr"] =  { "<cmd>Trouble lsp_references<cr>", "References" },  
+  ["<leader>tf"] = { "<cmd>Trouble lsp_definitions<cr>", "Definitions" },
+  ["<leader>td"] = { "<cmd>Trouble document_diagnostics<cr>", "Diagnostics" },
+  ["<leader>tq"] = { "<cmd>Trouble quickfix<cr>", "QuickFix" },
+  ["<leader>tl"] = { "<cmd>Trouble loclist<cr>", "LocationList" },
+  ["<leader>tw"] = { "<cmd>Trouble workspace_diagnostics<cr>", "QuickFix" },
+  },
+
+}
+
+
+
+
+
+
 -- add this table only when you want to disable default keys
 M.disabled = {
   n = {
